@@ -12,6 +12,7 @@ namespace Zork
 
             inputString = inputString.ToUpper();
 
+            //Zork 1.1 - Looking around and quitting
             if(inputString == "QUIT")
             {
                 Console.WriteLine("Thank you for playing!");
