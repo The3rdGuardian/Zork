@@ -1,0 +1,13 @@
+D:\DIG 4778\Zork\Zork\bin\Release\netcoreapp3.1\Zork.exe
+D:\DIG 4778\Zork\Zork\bin\Release\netcoreapp3.1\Zork.deps.json
+D:\DIG 4778\Zork\Zork\bin\Release\netcoreapp3.1\Zork.runtimeconfig.json
+D:\DIG 4778\Zork\Zork\bin\Release\netcoreapp3.1\Zork.runtimeconfig.dev.json
+D:\DIG 4778\Zork\Zork\bin\Release\netcoreapp3.1\Zork.dll
+D:\DIG 4778\Zork\Zork\bin\Release\netcoreapp3.1\Zork.pdb
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.csprojAssemblyReference.cache
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.AssemblyInfoInputs.cache
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.AssemblyInfo.cs
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.csproj.CoreCompileInputs.cache
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.dll
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.pdb
+D:\DIG 4778\Zork\Zork\obj\Release\netcoreapp3.1\Zork.genruntimeconfig.cache
