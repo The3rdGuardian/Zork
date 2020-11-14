@@ -1,0 +1,19 @@
+{
+  "World": {
+    "Rooms": [
+      {
+        "Name": "Test",
+        "Description": "This is a test.121212",
+        "Neighbors": {}
+      },
+      {
+        "Name": "West of House",
+        "Description": null,
+        "Neighbors": {}
+      }
+    ],
+    "StartingLocation": null
+  },
+  "WelcomeMessage": "Welcome to Zork!",
+  "ExitMessage": null
+}
