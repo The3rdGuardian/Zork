@@ -85,7 +85,7 @@
             this.fileToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(681, 30);
+            this.mainMenuStrip.Size = new System.Drawing.Size(681, 28);
             this.mainMenuStrip.TabIndex = 0;
             this.mainMenuStrip.Text = "menuStrip1";
             // 
@@ -163,11 +163,11 @@
             this.ZorkTabControl.Controls.Add(this.WorldInfoTab);
             this.ZorkTabControl.Controls.Add(this.GameInfoTab);
             this.ZorkTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ZorkTabControl.Location = new System.Drawing.Point(0, 30);
+            this.ZorkTabControl.Location = new System.Drawing.Point(0, 28);
             this.ZorkTabControl.Multiline = true;
             this.ZorkTabControl.Name = "ZorkTabControl";
             this.ZorkTabControl.SelectedIndex = 0;
-            this.ZorkTabControl.Size = new System.Drawing.Size(681, 566);
+            this.ZorkTabControl.Size = new System.Drawing.Size(681, 568);
             this.ZorkTabControl.TabIndex = 1;
             // 
             // WorldInfoTab
@@ -188,7 +188,7 @@
             this.WorldInfoTab.Location = new System.Drawing.Point(4, 25);
             this.WorldInfoTab.Name = "WorldInfoTab";
             this.WorldInfoTab.Padding = new System.Windows.Forms.Padding(3);
-            this.WorldInfoTab.Size = new System.Drawing.Size(673, 537);
+            this.WorldInfoTab.Size = new System.Drawing.Size(673, 539);
             this.WorldInfoTab.TabIndex = 0;
             this.WorldInfoTab.Text = "World Information";
             this.WorldInfoTab.UseVisualStyleBackColor = true;
@@ -198,7 +198,7 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.isModifiedToolStripStatusLabel1});
-            this.statusStrip.Location = new System.Drawing.Point(3, 508);
+            this.statusStrip.Location = new System.Drawing.Point(3, 510);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(667, 26);
             this.statusStrip.TabIndex = 12;
@@ -330,6 +330,7 @@
             this.RoomDesciptionTextbox.Name = "RoomDesciptionTextbox";
             this.RoomDesciptionTextbox.Size = new System.Drawing.Size(408, 83);
             this.RoomDesciptionTextbox.TabIndex = 4;
+            this.RoomDesciptionTextbox.TextChanged += new System.EventHandler(this.RoomDesciptionTextbox_TextChanged);
             // 
             // roomsBindingSource
             // 
@@ -347,6 +348,7 @@
             this.RoomNameTextbox.Name = "RoomNameTextbox";
             this.RoomNameTextbox.Size = new System.Drawing.Size(408, 22);
             this.RoomNameTextbox.TabIndex = 3;
+            this.RoomNameTextbox.TextChanged += new System.EventHandler(this.RoomNameTextbox_TextChanged);
             // 
             // RoomsListBox
             // 

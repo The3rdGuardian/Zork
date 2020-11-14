@@ -224,6 +224,17 @@ namespace Zork.Builder
             }
 
         }
+        private void RoomNameTextbox_TextChanged(object sender, EventArgs e)
+        {
+            UpdateViewModel();
+            UpdateSelectedRoomNeighbors();
+        }
+
+        private void RoomDesciptionTextbox_TextChanged(object sender, EventArgs e)
+        {
+            UpdateViewModel();
+            UpdateSelectedRoomNeighbors();
+        }
 
         public static string AssemblyTitle = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyTitleAttribute>().Title;
         public static GameViewModel _viewModel = new GameViewModel();
