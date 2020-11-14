@@ -68,7 +68,6 @@
             this.FilenameLabel = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.runToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrip.SuspendLayout();
             this.ZorkTabControl.SuspendLayout();
             this.WorldInfoTab.SuspendLayout();
@@ -86,7 +85,7 @@
             this.fileToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(681, 28);
+            this.mainMenuStrip.Size = new System.Drawing.Size(681, 30);
             this.mainMenuStrip.TabIndex = 0;
             this.mainMenuStrip.Text = "menuStrip1";
             // 
@@ -95,7 +94,6 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.openToolStripMenuItem,
-            this.runToolStripMenuItem,
             this.toolStripMenuItem3,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
@@ -103,7 +101,7 @@
             this.exitToolStripMenuItem,
             this.toolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -165,11 +163,11 @@
             this.ZorkTabControl.Controls.Add(this.WorldInfoTab);
             this.ZorkTabControl.Controls.Add(this.GameInfoTab);
             this.ZorkTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ZorkTabControl.Location = new System.Drawing.Point(0, 28);
+            this.ZorkTabControl.Location = new System.Drawing.Point(0, 30);
             this.ZorkTabControl.Multiline = true;
             this.ZorkTabControl.Name = "ZorkTabControl";
             this.ZorkTabControl.SelectedIndex = 0;
-            this.ZorkTabControl.Size = new System.Drawing.Size(681, 568);
+            this.ZorkTabControl.Size = new System.Drawing.Size(681, 566);
             this.ZorkTabControl.TabIndex = 1;
             // 
             // WorldInfoTab
@@ -190,7 +188,7 @@
             this.WorldInfoTab.Location = new System.Drawing.Point(4, 25);
             this.WorldInfoTab.Name = "WorldInfoTab";
             this.WorldInfoTab.Padding = new System.Windows.Forms.Padding(3);
-            this.WorldInfoTab.Size = new System.Drawing.Size(673, 539);
+            this.WorldInfoTab.Size = new System.Drawing.Size(673, 537);
             this.WorldInfoTab.TabIndex = 0;
             this.WorldInfoTab.Text = "World Information";
             this.WorldInfoTab.UseVisualStyleBackColor = true;
@@ -200,7 +198,7 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.isModifiedToolStripStatusLabel1});
-            this.statusStrip.Location = new System.Drawing.Point(3, 510);
+            this.statusStrip.Location = new System.Drawing.Point(3, 508);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(667, 26);
             this.statusStrip.TabIndex = 12;
@@ -439,13 +437,6 @@
             // 
             this.saveFileDialog.Filter = "World Files (*.json) |*.json";
             // 
-            // runToolStripMenuItem
-            // 
-            this.runToolStripMenuItem.Name = "runToolStripMenuItem";
-            this.runToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.runToolStripMenuItem.Text = "Run";
-            this.runToolStripMenuItem.Click += new System.EventHandler(this.runToolStripMenuItem_Click);
-            // 
             // ZorkBuilder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -516,7 +507,6 @@
         private UserControls.NeighborsUserControl NorthNeighborControl;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel isModifiedToolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripMenuItem runToolStripMenuItem;
     }
 }
 
