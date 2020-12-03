@@ -39,7 +39,6 @@ namespace Zork
             World = world;
             Player = player;
 
-            //Player Commands
             Commands = new Dictionary<string, Command>()
             {
                 { "QUIT", new Command("QUIT", new string[] { "QUIT", "Q", "BYE" }, Quit) },
