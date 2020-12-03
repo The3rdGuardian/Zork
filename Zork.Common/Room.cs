@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.Linq;
 using Newtonsoft.Json;
 
 namespace Zork
 {
     public class Room : IEquatable<Room>, INotifyPropertyChanged
     {
+#pragma warning disable CS0067
         public event PropertyChangedEventHandler PropertyChanged;
-
+#pragma warning restore CS0067
         [JsonProperty(Order = 1)]
         public string Name { get; set; }
 
@@ -23,24 +22,29 @@ namespace Zork
         [JsonIgnore]
         public IReadOnlyDictionary<Directions, Room> Neighbors => _neighbors;
 
+        public Room(string name = null)
+        {
+            Name = name;
+        }
+
         public static bool operator ==(Room lhs, Room rhs)
         {
-            if(ReferenceEquals(lhs, rhs))
+            if (ReferenceEquals(lhs, rhs))
             {
                 return true;
             }
 
-            if(lhs is null || rhs is null)
+            if (lhs is null || rhs is null)
             {
                 return false;
             }
 
-            return lhs.Name == rhs.Name;
+            return string.Compare(lhs.Name, rhs.Name, ignoreCase: true) == 0;
         }
 
         public static bool operator !=(Room lhs, Room rhs) => !(lhs == rhs);
 
-        public override bool Equals(object obj) => obj is Room room ? this == room : false;
+        public override bool Equals(object obj) => obj is Room room && this == room;
 
         public bool Equals(Room other) => this == other;
 
@@ -50,7 +54,7 @@ namespace Zork
 
         public void UpdateNeighbors(World world)
         {
-            _neighbors.Clear();           
+            _neighbors.Clear();
             foreach (var entry in NeighborNames)
             {
                 _neighbors.Add(entry.Key, world.RoomsByName[entry.Value]);
@@ -63,19 +67,7 @@ namespace Zork
             NeighborNames.Remove(direction);
         }
 
-        public void RemoveNeighbor(Room neighborToRemove)
-        {
-            var foundNeighborDirections = (from neighbor in _neighbors
-                                          where neighbor.Value == neighborToRemove
-                                          select neighbor.Key).ToArray();
-
-            foreach (var foundNeighborDirection in foundNeighborDirections)
-            {
-                RemoveNeighbor(foundNeighborDirection);
-            }           
-        }
-
-        public void AssignNeighbors(Directions direction, Room neighbor)
+        public void AssignNeighbor(Directions direction, Room neighbor)
         {
             _neighbors[direction] = neighbor;
             NeighborNames[direction] = neighbor.Name;

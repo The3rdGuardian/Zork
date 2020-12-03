@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uTGZXDmKFRS15403TyI5J1EdY9JpxiyTj/bHVn8y/CAmM4PghkeL+9A+L4OeWjkxObPqce30NRIO4nupRSbJiQ==",
+  "dgSpecHash": "tiDrDDTX1r4TCWxz4yn8zy/2Jx9QSRPpUaehrPlhGsHprod0FHXvUZKOSNEAAal+5/LvauEFkf4GMFYdpS1TjA==",
   "success": true,
   "projectFilePath": "D:\\DIG 4778\\Zork\\Zork.Common\\Zork.Common.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\edwar\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\edwar\\.nuget\\packages\\propertychanged.fody\\3.3.1\\propertychanged.fody.3.3.1.nupkg.sha512"
+    "C:\\Users\\edwar\\.nuget\\packages\\propertychanged.fody\\3.2.10\\propertychanged.fody.3.2.10.nupkg.sha512"
   ],
   "logs": []
 }

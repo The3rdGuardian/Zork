@@ -8,33 +8,31 @@ namespace Zork
 {
     public class World : INotifyPropertyChanged
     {
+#pragma warning disable CS0067
         public event PropertyChangedEventHandler PropertyChanged;
+#pragma warning restore CS0067
         public List<Room> Rooms { get; set; }
 
         [JsonIgnore]
-        public IReadOnlyDictionary<string, Room> RoomsByName => mRoomsByName;
+        public IReadOnlyDictionary<string, Room> RoomsByName => _roomsByName;
 
         public World()
         {
             Rooms = new List<Room>();
-            mRoomsByName = new Dictionary<string, Room>();
+            _roomsByName = new Dictionary<string, Room>();
         }
-        public Player SpawnPlayer() => new Player(this, StartingLocation);
 
         [OnDeserialized]
         private void OnDeserialized(StreamingContext context)
         {
-            mRoomsByName = Rooms.ToDictionary(room => room.Name, room => room);
+            _roomsByName = Rooms.ToDictionary(room => room.Name, room => room);
 
-            foreach(Room room in Rooms)
+            foreach (Room room in Rooms)
             {
                 room.UpdateNeighbors(this);
             }
-        }
+        } 
 
-        [JsonProperty]
-        public string StartingLocation { get; set; }
-
-        private Dictionary<string, Room> mRoomsByName;
+        private Dictionary<string, Room> _roomsByName;
     }
 }

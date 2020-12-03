@@ -1,10 +1,13 @@
 D:\DIG 4778\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.deps.json
 D:\DIG 4778\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.dll
+D:\DIG 4778\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.pdb
 D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.csprojAssemblyReference.cache
 D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.AssemblyInfoInputs.cache
 D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.AssemblyInfo.cs
-D:\DIG 4778\Zork\Zork.Common\bin\Debug\netstandard2.0\Zork.Common.pdb
-D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.dll
-D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.pdb
 D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.csproj.CoreCompileInputs.cache
 D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.csproj.Fody.CopyLocal.cache
+D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.dll
+D:\DIG 4778\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.pdb
+D:\DIG 4778\Zork\Zork.Unity\Assets\netstandard2.0\Zork.Common.deps.json
+D:\DIG 4778\Zork\Zork.Unity\Assets\netstandard2.0\Zork.Common.dll
+D:\DIG 4778\Zork\Zork.Unity\Assets\netstandard2.0\Zork.Common.pdb
